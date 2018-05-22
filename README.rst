@@ -12,8 +12,8 @@ Prerequisite
 
 * EC2 instances already created for a region.
 * To connect locally, give access key and access secret key by changing inside the file ~/.aws/credentials
-The parameter -e (--env) to be passed to fetch the env access key and secret access from the file.
-To change it to different file, make the changes inside constant.py
+* The parameter -e (--env) to be passed to fetch the env access key and secret access from the file.
+* To change it to different file, make the changes inside constant.py
 * env must be configured in config.ec2_instances.py
 * To exclude any critical instance, mention it as excluded instance inside ec2_instance.py under the region.
 
