@@ -21,9 +21,11 @@ Prerequisite
 Command:
 ----------
     python start_stop_ec2.py -a <action> -e <env>
+
     python start_stop_ec2.py -a start -e test_server
 
 Here, action can be start or stop
+
 env can be your environment/account which you have configured inside ~/.aws/credentials and config.ec2_instances.py
 
 Credit:
