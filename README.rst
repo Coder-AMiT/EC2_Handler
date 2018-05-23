@@ -20,22 +20,31 @@ Prerequisite
 Formats
 --------
     ~/.aws/credentials
+
     [default]
+
     aws_access_key_id=<aws_access_key>
+
     aws_secret_access_key=<aws_secret_access_key>
 
+
     [user2]
+
     aws_access_key_id=<aws_access_key>
+
     aws_secret_access_key=<aws_secret_access_key>
+
 
 .
 
     ~/.aws/config
 
     [default]
+
     region=us-west-2
 
     [profile user2]
+
     region=us-east-1
 
 `AWS Profile creation <https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html>`_
