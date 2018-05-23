@@ -19,7 +19,7 @@ Prerequisite
 
 Formats
 --------
-    ~/.aws/credentials
+~/.aws/credentials
 
     [default]
 
@@ -35,9 +35,7 @@ Formats
     aws_secret_access_key=<aws_secret_access_key>
 
 
-.
-
-    ~/.aws/config
+~/.aws/config
 
     [default]
 
