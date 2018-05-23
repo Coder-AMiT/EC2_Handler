@@ -11,11 +11,34 @@ Prerequisite
 -------------
 
 * EC2 instances already created for a region.
-* To connect locally, give access key and access secret key by changing inside the file ~/.aws/credentials
-* The parameter -e (--env) to be passed to fetch the env access key and secret access from the file.
-* To change it to different file, make the changes inside constant.py
-* env must be configured in config.ec2_instances.py
+* Create the profile inside ~/.aws/config , set the region for the profile
+* Give access and secret access key for the same profile inside the file ~/.aws/credentials
+* env (profile) must be configured in ec2_instances.py , ~/.aws/config and ~/.aws/credentials
 * To exclude any critical instance, mention it as excluded instance inside ec2_instance.py under the region.
+
+
+Formats
+--------
+    ~/.aws/credentials
+    [default]
+    aws_access_key_id=<aws_access_key>
+    aws_secret_access_key=<aws_secret_access_key>
+
+    [user2]
+    aws_access_key_id=<aws_access_key>
+    aws_secret_access_key=<aws_secret_access_key>
+
+.
+
+    ~/.aws/config
+
+    [default]
+    region=us-west-2
+
+    [profile user2]
+    region=us-east-1
+
+`AWS Profile creation <https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html>`_
 
 
 Fixes
