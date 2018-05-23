@@ -18,6 +18,13 @@ Prerequisite
 * To exclude any critical instance, mention it as excluded instance inside ec2_instance.py under the region.
 
 
+Fixes
+-----
+* User can create multiple Env for one or different regions.
+* User can exclude one or more instances for a region by changing in ec_instance.py
+* Will not let stop/start instance with similar name. It will work only instances which are exactly matching with given one.
+* Raises exception on No instance being passed to boto3.
+
 Command:
 ----------
     python start_stop_ec2.py -a <action> -e <env>
@@ -28,6 +35,6 @@ Here, action can be start or stop
 
 env can be your environment/account which you have configured inside ~/.aws/credentials and config.ec2_instances.py
 
-Credit:
-----------
-All the modifications are done by `Amit Yadav <https://github.com/Coder-AMiT>`_ 
+Contributions:
+--------------
+Modifications are done by `Amit Yadav <https://github.com/Coder-AMiT>`_
